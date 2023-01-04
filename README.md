@@ -10,6 +10,8 @@ There is used LVGL as a graphic library.
 
 This example contains the 2048 Game, which was used from https://github.com/100askTeam/lv_lib_100ask.
 
+<img src="doc/images/multiple_lcd_main.jpg">
+
 ## Supported graphical controllers
 
 - [x] GC9A01 (SPI)

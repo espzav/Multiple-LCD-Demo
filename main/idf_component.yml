@@ -1,0 +1,10 @@
+dependencies:
+  idf: ">=4.4"
+  esp_lvgl_port: "^1.0"
+  esp_lcd_gc9a01: "^1.0"
+  esp_lcd_ra8875: "^1.0"
+  esp_lcd_sh1107: "^1.0"
+  esp_lcd_touch_gt911: "^1.0"
+  esp_lcd_touch_tt21100: "^1.0"
+  esp_lcd_touch_ft5x06: "^1.0"
+

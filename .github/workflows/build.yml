@@ -24,10 +24,11 @@ jobs:
         run: |
           . ${IDF_PATH}/export.sh
           idf.py build
+          cp build/multiple_lcd.bin build/multiple_lcd_${{ matrix.idf_target }}.bin
       - name: Update release
         uses: pyTooling/Actions/releaser@r0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           files: |
-            build/multiple_lcd.bin
+            build/multiple_lcd_${{ matrix.idf_target }}.bin
           tag: multiple_lcd_latest

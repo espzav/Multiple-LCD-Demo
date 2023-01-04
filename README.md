@@ -1,5 +1,5 @@
-| Supported Targets | ESP32 | ESP32-S2 | ESP32-S3 |
-| ----------------- | ----- | -------- | -------- |
+| Supported Targets | ESP32-S3 |
+| ----------------- | -------- |
 
 
 # Multiple LCD Display Example
@@ -84,14 +84,12 @@ idf.py -p COMx flash monitor
 ### Use
 
 * Connect to Wi-Fi on **Wi-Fi** tab (saved into NVS)
-* Set weather place on **Settings** tab
-* See time on top and on the round display.
-* See the weather on the **Home** tab
+* Set weather place on **Settings** tab (saved into NVS)
+* Look at time on top and on the round display
+* Look at the weather on the **Home** tab
 * Play the 2048 Game on **Game** tab
 
 # Flash latest binary from browser
-
-[![Build demo](https://github.com/espzav/Multiple-LCD-Demo/actions/workflows/build.yml/badge.svg)](https://github.com/espzav/Multiple-LCD-Demo/actions/workflows/build.yml)
 
 <a href="https://espressif.github.io/esp-launchpad/?flashConfigURL=https://espzav.github.io/Multiple-LCD-Demo/tools/launchpad.toml">
     <img alt="Try it with ESP Launchpad" src="https://espressif.github.io/esp-launchpad/assets/try_with_launchpad.png" width="250" height="70">

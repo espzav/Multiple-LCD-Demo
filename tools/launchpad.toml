@@ -1,0 +1,10 @@
+esp_toml_version = 1.0
+firmware_images_url = "https://github.com/espzav/Multiple-LCD-Demo/releases/download/multiple_lcd_latest/"
+
+supported_apps = ["MULTIPLE_LCD_DEMO"]
+
+[MULTIPLE_LCD_DEMO]
+chipsets = ["ESP32-S3"]
+image.esp32-s3 = "multiple_lcd.bin"
+android_app_url = ""
+ios_app_url = ""

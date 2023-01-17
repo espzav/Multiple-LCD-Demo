@@ -25,9 +25,7 @@ jobs:
           . ${IDF_PATH}/export.sh
           idf.py set-target ${{matrix.idf_target}} build
           cd build
-          TARGET_CHIP=`cat project_description.json | python3 -c 'import sys,json; print(json.load(sys.stdin)["target"])'`
-          APP_BIN=`cat project_description.json | python3 -c 'import sys,json; print(json.load(sys.stdin)["app_bin"])'`
-          esptool.py --chip $IDF_TARGET merge_bin -o "multiple_lcd_$IDF_TARGET.bin" `cat flash_args | tr '\n' '\ '`
+          esptool.py --chip ${{matrix.idf_target}} merge_bin -o "multiple_lcd_${{matrix.idf_target}}.bin" @flash_args
       - name: Update release
         uses: pyTooling/Actions/releaser@r0
         with:

@@ -855,7 +855,7 @@ static void lvgl_show_info(lv_obj_t * screen, const lv_font_t * font, uint32_t w
     lv_img_set_src(img_logo, &esp_logo);
     lv_obj_align(img_logo, LV_ALIGN_TOP_LEFT, 10, 10);
     if (width < 400) {
-        lv_img_set_zoom(img_logo, 128); /* Half size */
+        lv_img_set_zoom(img_logo, 100); /* Half size */
     }
 
     lv_obj_t * img_text = lv_img_create(screen);
@@ -863,14 +863,14 @@ static void lvgl_show_info(lv_obj_t * screen, const lv_font_t * font, uint32_t w
     lv_obj_set_style_img_recolor(img_text, lv_color_make(0xFF, 0xFF, 0xFF), 0);
     lv_obj_align_to(img_text, img_logo, LV_ALIGN_OUT_RIGHT_MID, 10, 0);
     if (width < 400) {
-        lv_img_set_zoom(img_text, 128); /* Half size */
+        lv_img_set_zoom(img_text, 100); /* Half size */
     }
 
     lv_obj_t * lbl_info = lv_label_create(screen);
 	lv_obj_set_style_text_font(lbl_info, font, 0);
     lv_obj_set_width(lbl_info, width);
     lv_label_set_long_mode(lbl_info, LV_LABEL_LONG_WRAP);
-    lv_label_set_text_static(lbl_info, "This example shows handling multiple LCD displays with touch from one MCU. It shows time synchronized with SNTP server and weather synchronized with https://openweathermap.org/. It allows search WiFi networks and connect to selected. It can change the weather place, weather update interval and time zone. All settings are saved into NVS and loaded after each restart.\n\nThere is used LVGL as a graphic library.");
+    lv_label_set_text_static(lbl_info, "This example shows handling multiple LCD displays with touch from one MCU. It shows time synchronized with SNTP server and weather synchronized with https://openweathermap.org/. It allows search WiFi networks and connect to selected. It can change the weather place, weather update interval and time zone. All settings are saved into NVS and loaded after each restart.\nThere is used LVGL as a graphic library.\n\nGitHub link: https://github.com/espzav/Multiple-LCD-Demo");
 
     lv_obj_set_style_text_align(lbl_info, LV_TEXT_ALIGN_CENTER, 0);
     lv_obj_align(lbl_info, LV_ALIGN_BOTTOM_MID, 0, 0);

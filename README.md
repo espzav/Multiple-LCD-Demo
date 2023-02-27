@@ -93,7 +93,7 @@ idf.py -p COMx flash monitor
 
 # Flash latest binary from browser
 
-<a href="https://espressif.github.io/esp-launchpad/?flashConfigURL=https://espzav.github.io/Multiple-LCD-Demo/tools/launchpad.toml">
+<a href="https://espressif.github.io/esp-launchpad/?flashConfigURL=https://espzav.github.io/Multiple-LCD-Demo/launchpad.toml">
     <img alt="Try it with ESP Launchpad" src="https://espressif.github.io/esp-launchpad/assets/try_with_launchpad.png" width="250" height="70">
 </a>
 
